@@ -1,0 +1,142 @@
+html {
+  font-size: 16px;
+  background-color: #293825;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-style: 2rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+header {
+  background-color: #fff;
+  padding: 2rem 0;
+  border: #206796;
+  width: 100%;
+}
+
+header li {
+  text-transform: capitalize;
+  color: #206796;
+  margin-right: 1.2rem;
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (420px)[3];
+      grid-template-columns: repeat(3, 420px);
+      grid-template-areas: "title-left puppy-img right1" "graph-img puppy-img right2" "graph-img puppy-img right3";
+}
+
+.puppy-img img {
+  width: 100%;
+  height: 22rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.graph-img img {
+  width: 100%;
+  height: 14rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.box {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 0.6rem;
+}
+
+.box button {
+  width: 30%;
+  height: 1.5rem;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  color: white;
+  background-color: #e8452f;
+  border: none;
+}
+
+.box p {
+  font-size: 0.9rem;
+}
+
+.box h2 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.title-left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title-left;
+}
+
+.puppy-img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: puppy-img;
+}
+
+.right1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: right1;
+}
+
+.graph-img {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: graph-img;
+}
+
+.right2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: right2;
+}
+
+.right3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: right3;
+}
+/*# sourceMappingURL=style.css.map */
